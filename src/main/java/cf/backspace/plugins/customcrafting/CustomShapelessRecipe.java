@@ -19,11 +19,7 @@ public class CustomShapelessRecipe {
 
     public boolean doesFit(List<ItemStack> newMatrix) {
         for(int i = 0; i<matrix.size(); i++) {
-            if(newMatrix.size() >= matrix.size()) {
-                if (!matrix.contains(newMatrix.get(i))) {
-                    return false;
-                }
-            }
+            if(!newMatrix.contains(matrix.get(i))) return false;
         }
         return true;
     }

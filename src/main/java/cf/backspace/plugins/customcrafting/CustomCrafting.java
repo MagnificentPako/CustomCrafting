@@ -33,6 +33,11 @@ public class CustomCrafting extends JavaPlugin implements Listener {
         ItemStack res = new ItemStack(Material.LOG,4);
         for(int i = 0; i <8; i++) matrix.add(item);
         addRecipe(new CustomRecipe(matrix,res));
+
+        List<ItemStack> m1 = new ArrayList();
+        m1.add(new ItemStack(Material.STONE,2));
+        m1.add(new ItemStack(Material.LOG,3));
+        addRecipe(new CustomShapelessRecipe(m1,new ItemStack(Material.DIAMOND)));
     }
 
     @Override
@@ -72,13 +77,12 @@ public class CustomCrafting extends JavaPlugin implements Listener {
                     result = recipe.getResult();
                 }
             }
-            if(result == null) {
                 for(CustomShapelessRecipe recipe : shapelessRecipes) {
                     if(recipe.doesFit(matrix)) {
                         result = recipe.getResult();
                     }
                 }
-            }
+
 
             if(result != null) {
                 boolean hasRes = false;
