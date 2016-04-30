@@ -1,7 +1,7 @@
 ﻿{
     "package": {
-        "name": "auto-upload",
-        "repo": "myRepo",
+        "name": "Test",
+        "repo": "Test",
         "subject": "myBintrayUser",
         "desc": "I was pushed completely automatically",
         "website_url": "www.jfrog.com",
