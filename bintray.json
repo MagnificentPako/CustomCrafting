@@ -13,12 +13,12 @@
        In case the version already exists on Bintray, only the name fields is mandatory. */
 
     "version": {
-        "name": "0.5"
+        "name": "0.1"
     },
 
     "files":
         [
-        {"includePattern": "target/(.*)", "excludePattern": "target/.*.zip$", "uploadPattern": "/$1"}
+        {"includePattern": "target/(.*)", "uploadPattern": "/$1"}
         ],
     "publish": true
 }
