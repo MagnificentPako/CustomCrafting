@@ -18,7 +18,7 @@
 
     "files":
         [
-        {"includePattern": "target/CustomCrafting-1.0-SNAPSHOT.jar", "uploadPattern": "/$1"}
+        {"includePattern": "target/(.*)", "uploadPattern": "/$1"}
         ],
     "publish": true
 }

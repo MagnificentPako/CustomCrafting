@@ -13,7 +13,7 @@
        In case the version already exists on Bintray, only the name fields is mandatory. */
 
     "version": {
-        "name": "0.1"
+        "name": "1.0"
     },
 
     "files":
